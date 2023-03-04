@@ -1,0 +1,4 @@
+# Install apache2
+sudo apt install apache2
+
+systemctl status apache2 

@@ -1,0 +1,16 @@
+# Basic comamnds commands are located under /bin
+ls: 
+cat:
+mkdir: 
+
+# Basic administration commands are located under /sbin/
+# requires `sudo` access
+chown:
+reboot:
+
+# Advanced commads:
+find: 
+awk: 
+cut: 
+sed:
+

@@ -1,0 +1,14 @@
+ifconfig
+ip
+traceroute
+ping
+netstat
+ss
+dig
+hostname
+lsof 
+ethtool
+tcpdump 
+nslookup 
+host
+mtr 
