@@ -1,0 +1,19 @@
+{
+    "students_name": [
+        "Aigerim",
+        "Aidar",
+        "Gulai",
+        "Jason"
+    ], 
+    "ages" : [
+        30,
+        25,
+        23
+    ],
+    "adress": {
+        "Address1" : "Chicago",
+        "Adress2": "Seattle"
+    }
+}
+
+
