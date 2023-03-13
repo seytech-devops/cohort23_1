@@ -1,4 +1,4 @@
-# Class Notes - 031023
+# Class Notes - 030923
 # EC2
 
 - Secure, resizable compute capacity in the cloud.
