@@ -1,12 +1,12 @@
 # Class Notes - 2023.03.13
 
 #### Student demos 
-- [ ] Ainura > Data-streams (STDIN-STDOUT-STDERR)
+- [x] Ainura > Data-streams (STDIN-STDOUT-STDERR)
+- [x] Sandji > File permissions
 - [ ] Gulay > Package management
 - [ ] Yuliya > User & Group Management
 - [ ] Tlektes > DNS
 - [ ] Dzhalsan > OSI Model
-- [ ] Sandji > File permissions
 - [ ] Marzhan > Networking (ports, MAC addresses, etc).
 - [ ] Mirbek > Network (CIDR, subnets, etc.)
 
