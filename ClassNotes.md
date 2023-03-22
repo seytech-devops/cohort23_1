@@ -68,7 +68,7 @@
     `yum install httpd
     systemctl start httpd
     systemctl enable httpd
-    cd /var/www/htlm
+    cd /var/www/html
     echo "<html><body><h1>Hello DevOps Students</h1></body></html>" > index.html 
     `
 
@@ -81,8 +81,8 @@ Userdata script below
     yum install httpd
     systemctl start httpd
     systemctl enable httpd
-    cd /var/www/htlm
-    echo "<html><body><h1>My IP is" > index.html 
-    curl https://169.254.169.254/latest/meta-data/local-ipv4 >> index.html
+    cd /var/www/html
+    echo "<html><body><h1>My IP is: " > index.html 
+    TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/public-ipv4 >> index.html
     echo "</h1></body></html>" >> index.html
 `
