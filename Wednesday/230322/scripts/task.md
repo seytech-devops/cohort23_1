@@ -63,10 +63,11 @@ After the Target Group gets created
     Launch Template: Above created (Version: Latest)
 
 
+## Please try and test with changing the AUTO scaling group numbers
+- Out Load Balancer DNS names should be accepting incoming traffic on port 9090
 
 
-
-
-
+## Login (ssh) into one of the EC2 and check the logs
+/var/log/cloud-init-output.log  Look for the comamnds we have passed into userdata.
 
 
