@@ -66,12 +66,15 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 
 Please update userdata and 
 ```
-yum install httpd
+#!/usr/bin/bash 
+set -x
+yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
 mkdir -p /var/www/html
-cd /var/www/html
-echo "<html><body><h1>My IP is: " > index.html 
-TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/public-ipv4 >> index.html
-echo "</h1></body></html>" >> index.html
+echo "<html><body><h1>My IP is: " >> /var/www/html/index.html 
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/public-ipv4 >> /var/www/html/index.html
+echo "</h1></body></html>" >> /var/www/html/index.html
+
+set +x
 ```
