@@ -1,0 +1,124 @@
+<mxfile host="65bd71144e">
+    <diagram id="Cv9fBTn-zGsbL8adKEhh" name="Page-1">
+        <mxGraphModel dx="1682" dy="1711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="AWS Region&lt;br&gt;us-east" style="outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;verticalAlign=top;align=left;spacingLeft=30;dashed=0;shadow=0;fillColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-270" y="10" width="789" height="481" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;verticalAlign=top;align=left;spacingLeft=30;dashed=0;shadow=0;fillColor=none;strokeColor=#00CC00;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="-162" y="54" width="607" height="401.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="rounded=1;arcSize=10;dashed=1;strokeColor=#FFFF00;fillColor=none;gradientColor=none;dashPattern=8 4;strokeWidth=4;fontStyle=1;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="-76" y="103" width="449" height="168.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Availability Zone 1" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=1;fontColor=#147EBA;whiteSpace=wrap;html=1;shadow=0;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="-60" y="66.75" width="160" height="376" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet_gateway;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="107" y="34" width="48" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#248814;fillColor=#E9F3E6;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="-42" y="126" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Subnets are created within AZs" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FF66B3;fontColor=#99FFFF;" vertex="1" parent="5">
+                    <mxGeometry x="15" y="46.25" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#248814;fillColor=#E9F3E6;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="218" y="128" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="-42" y="282" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="218" y="284" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=1;arcSize=10;dashed=1;strokeColor=#FFFF00;fillColor=none;gradientColor=none;dashPattern=8 4;strokeWidth=4;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="-78" y="279" width="449" height="168.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="PrivateSG" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=270;fontStyle=1;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="-120" y="348.2499755859375" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="PublicSG" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=270;fontStyle=1;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="-118" y="183.9999755859375" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font color=&quot;#99ffff&quot;&gt;Availability Zone 2&lt;/font&gt;" style="fillColor=none;strokeColor=#6c8ebf;dashed=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="198.5" y="66.75" width="169" height="376" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.flow_logs;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="407.5" y="31.5" width="50.5" height="50.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;b style=&quot;background-color: rgb(255, 102, 179);&quot;&gt;Internet Gateway&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="101" y="3.9999755859375057" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;fontColor=#0000FF;" edge="1" parent="1" source="17" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;span style=&quot;background-color: rgb(125, 18, 18);&quot;&gt;VPC Flow logs&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="404" y="7.000024414062494" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Amazon S3" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="466" y="150.25" width="49" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.053;entryY=0.307;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;flowAnimation=1;" edge="1" parent="1" source="22" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.925;entryY=0.297;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;flowAnimation=1;" edge="1" parent="1" source="22" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;b&gt;&lt;font color=&quot;#ff00ff&quot;&gt;PubRT&lt;/font&gt;&lt;/b&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.route_table;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="127.43" y="150.25" width="44.13" height="43" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Creating a highly available VPC" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-78" y="-90" width="361" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.virtual_private_cloud;fillColor=#F58534;gradientColor=none;labelBackgroundColor=#FF66B3;fontColor=#99FFFF;" vertex="1" parent="1">
+                    <mxGeometry x="-170" y="54" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="A vpc is a logically isolated portion of the aws cloud within region" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FF66B3;fontColor=#99FFFF;" vertex="1" parent="1">
+                    <mxGeometry x="-240" y="94.05000000000001" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Subnets are created within AZs" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FF66B3;fontColor=#99FFFF;" vertex="1" parent="1">
+                    <mxGeometry x="233" y="340" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Amazon EC2" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;labelBackgroundColor=#FF66B3;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="153.75" width="60" height="60.25" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;font color=&quot;#0000ff&quot;&gt;You can launch ec2 into your vpc subnets&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#edff66;fontColor=#99FFFF;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="214" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=classic;html=1;fontColor=#0000FF;entryX=0.951;entryY=0.27;entryDx=0;entryDy=0;entryPerimeter=0;flowAnimation=1;" edge="1" parent="1" target="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="450" y="80" as="sourcePoint"/>
+                        <mxPoint x="500" y="30" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="" style="endArrow=classic;startArrow=classic;html=1;fontColor=#0000FF;flowAnimation=1;" edge="1" parent="1" source="4" target="22">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="130" y="90" as="sourcePoint"/>
+                        <mxPoint x="180" y="40" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="149" y="110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="An IG is attached to a VPC and used to connect to the internet" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFCC;fontColor=#0000FF;" vertex="1" parent="1">
+                    <mxGeometry x="33" y="-26" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="The RT is used to configure the vpc router" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFCC;fontColor=#0000FF;" vertex="1" parent="1">
+                    <mxGeometry x="127.43" y="248.25" width="60" height="4.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="each subnet has a block of IP addresses from the CIDR" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFCC;fontColor=#0000FF;" vertex="1" parent="1">
+                    <mxGeometry x="-22" y="332" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Amazon EC2" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;labelBackgroundColor=#FFFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="-22" y="202.75" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png;labelBackgroundColor=#FFFFCC;strokeColor=#00CC00;fontColor=#0000FF;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="287.5" y="-100" width="80" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
