@@ -1,0 +1,30 @@
+Rules:
+  testInstanceType:
+    RuleCondition: !Equals 
+      - !Ref Environment --> The value of this is not test, it is actually qa
+      - test
+    Assertions:
+      - Assert:
+          'Fn::Contains':
+            - - a1.medium
+            - !Ref InstanceType --> The value of this doesn't contain a1.medium, the ectaul value comes back as c5.medium
+        AssertDescription: 'For a test environment, the instance type must be a1.medium'
+  qaInstanceType:
+  prodInstanceType:
+
+
+  prodInstanceType:
+    RuleCondition: Fn::Not [
+        Fn::Equals
+        ]
+      - !Ref Environment
+      - prod
+    RuleCondition: !Equals 
+      - !Ref Environment
+      - prod
+    Assertions:
+      - Assert:
+          'Fn::Contains':
+            - - a1.large
+            - !Ref InstanceType
+        AssertDescription: 'For a production environment, the instance type must be a1.large'

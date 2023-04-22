@@ -1,0 +1,20 @@
+---
+AWSTemplateFormatVersion: "version date"
+Description:
+  String
+Metadata:
+  template metadata, is very usefull, I believe you can define how the stack shold show in UI
+Parameters:
+  set of parameters
+Rules:
+  set of rules
+Mappings:
+  set of mappings
+Conditions:
+  set of conditions
+Transform:
+  set of transforms
+Resources:
+  set of resources
+Outputs:
+  set of outputs
