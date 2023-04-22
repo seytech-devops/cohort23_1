@@ -1,61 +1,88 @@
-
 AWSTemplateFormatVersion: 2010-09-09
 Description: "EC2 suites"
 Parameters:
   KeyName:
     Type: AWS::EC2::KeyPair::KeyName
     Description: "Name of an existing SSH Keypair to access the instance"
-    Default: casesuroo
   InstanceType:
     Description: Allowed EC2 instance type
     Type: String
+    Default: t2.micro
     AllowedValues:
-    - t1.micro
-    - t2.nano
-    - t2.micro
-    - t2.small
-    - t2.medium
-    - t2.large
-    - m1.small
-    - m1.medium
+      - t1.micro
+      - t2.nano
+      - t2.micro
+      - t2.small
+      - t2.medium
+      - t2.large
+      - m1.small
+      - m1.medium
+  EnvType:
+    Description: Environment type.
+    Default: prod
+    Type: String
+    AllowedValues:
+      - prod
+      - test
+    ConstraintDescription: must specify prod or test.
+Conditions:
+  CreateProdResources: !Equals
+    - !Ref EnvType
+    - prod
+Mappings:
+  RegionMap:
+    us-east-1:
+      "AMIID": "ami-02396cdd13e9a1257"
+    us-east-2:
+      "AMIID": "ami-0578f2b35d0328762"
 Resources:
   SSHSecurityGroup:
-    Type: 'AWS::EC2::SecurityGroup'
+    Type: "AWS::EC2::SecurityGroup"
+    Condition: CreateProdResources
     Properties:
       GroupDescription: Enable SSH access via port 22
       GroupName: SSHSG
       SecurityGroupIngress:
         - IpProtocol: tcp
-          FromPort: '22'
-          ToPort: '22'
+          FromPort: "22"
+          ToPort: "22"
           CidrIp: 24.12.156.0/16
       Tags:
         - Key: Name
           Value: SSHSecurityGroup
   EC2Instance:
-    Type: 'AWS::EC2::Instance'
+    Type: "AWS::EC2::Instance"
+    Condition: CreateProdResources
     Properties:
       KeyName: !Ref KeyName
       InstanceType: "t2.micro"
-      ImageId: "ami-02396cdd13e9a1257"
-      SecurityGroups: 
+      ImageId: !FindInMap [RegionMap, !Ref "AWS::Region", AMIID]
+      SecurityGroupIds:
         - !Ref SSHSecurityGroup
       Tags:
         - Key: Name
           Value: TestEC2
-  S3Bucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      Tags: 
-        - Key: Name
-          Value: ksultan-bucket100
-  EBSVolume:
-    Type: AWS::EC2::Volume
-    Properties:
-      AvailabilityZone: us-east-1a
-      Iops: 3000
-      Size: 10
-      VolumeType: gp3
-      Tags: 
-        - Key: Name
-          Value: TestVolume
+  # S3Bucket:
+  #   Type: AWS::S3::Bucket
+  #   Properties:
+  #     Tags:
+  #       - Key: Name
+  #         Value: ksultan-bucket100
+  # EBSVolume:
+  #   Type: AWS::EC2::Volume
+  #   Properties:
+  #     AvailabilityZone: us-east-1a
+  #     Iops: 3000
+  #     Size: 10
+  #     VolumeType: gp3
+  #     Tags:
+  #       - Key: Name
+  #         Value: TestVolume
+
+Outputs:
+  EC2InstanceID:
+    Description: The Instance ID of EC2
+    Value: !Ref EC2Instance
+  SSHSGID:
+    Description: The SSH Security Group ImageId
+    Value:  !GetAtt SSHSecurityGroup.GroupId
