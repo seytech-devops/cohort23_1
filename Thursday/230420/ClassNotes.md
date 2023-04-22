@@ -65,9 +65,7 @@
         - Fn::If
         - Fn::Not
         - Fn::Or
-
 - Transform:
-
 - Resources:                                          # --> ONLY Required section in CF
   - Logical ID:
     - Type: Resource type
@@ -76,7 +74,6 @@
         - [Click for all Types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
     - Properties:
       - Set of properties
-
 - Outputs:
   - Logical ID:
     - Description: Information about the value
