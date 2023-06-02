@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kanat-nginx
+  labels:
+    name: front-end
+spec:
+  containers:
+  - name: kanat-nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80 

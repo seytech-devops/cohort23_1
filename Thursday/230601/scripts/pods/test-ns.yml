@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"labels":{"name":"seytech"},"name":"seytech"}}
+  creationTimestamp: "2023-06-02T01:05:46Z"
+  labels:
+    kubernetes.io/metadata.name: seytech
+    name: seytech
+  name: seytech
+  resourceVersion: "145029"
+  uid: 0e20924a-0ae2-4cd3-a1d7-9c42d1b9c2ab
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active

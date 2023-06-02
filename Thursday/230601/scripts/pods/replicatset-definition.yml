@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: seytech
+  labels:
+    app: seytech-website
+    tier: backend
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      tier: backend
+  template:
+    metadata:
+      labels:
+        tier: backend
+    spec:
+      containers:
+      - name: redis
+        image: redis

@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"ReplicaSet","metadata":{"annotations":{},"labels":{"app":"seytech-website","tier":"backend"},"name":"seytech","namespace":"default"},"spec":{"replicas":5,"selector":{"matchLabels":{"tier":"backend"}},"template":{"metadata":{"labels":{"tier":"backend"}},"spec":{"containers":[{"image":"redis","name":"redis"}]}}}}
+  creationTimestamp: "2023-06-02T00:58:46Z"
+  generation: 1
+  labels:
+    app: seytech-website
+    tier: backend
+  name: seytech
+  namespace: default
+  resourceVersion: "144738"
+  uid: a120b748-fd64-4f3d-b430-b3bbec8f413a
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      tier: backend
+  template:
+    metadata:
+      labels:
+        tier: backend
+    spec:
+      containers:
+      - image: redis
+        imagePullPolicy: IfNotPresent
+        name: redis
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 5
+  fullyLabeledReplicas: 5
+  observedGeneration: 1
+  readyReplicas: 5
+  replicas: 5
