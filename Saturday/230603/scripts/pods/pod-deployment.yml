@@ -1,0 +1,13 @@
+apiServer: apps/v1
+kind: Deployment
+metada:
+  name: nginx-pod
+  labels:
+    name: nginx-pod
+    tier: front-end
+spec:
+  containers:
+    name: nginx-pod
+    image: nginx
+    ports:
+      - containerPort: 80
