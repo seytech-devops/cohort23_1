@@ -1,0 +1,13 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  namespace: seytech
+  name: manual
+provisioner:  k8s.io/minikube-hostpath
+reclaimPolicy: Retain
+parameters:
+  type: none
+allowVolumeExpansion: false
+mountOptions:
+  - debug
+volumeBindingMode: Immediate
