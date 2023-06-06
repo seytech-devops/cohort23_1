@@ -34,3 +34,18 @@
     - kubectl describe - show detailed information about a resource
     - kubectl logs - print the logs from a container in a pod
     - kubectl exec - execute a command on a container in a pod
+
+
+# Worker Nodes and Control Plane
+
+## How do we manage the workloads to run or not on 
+    - control plane
+    - worked node
+    : are done by using following optins:
+        - Taint
+            - Apply the toleration to Tainted Node.
+            - Example:
+                - Control plane is Tainted not to run any workload (pod)
+                - but can be tolerated using the Toleration on pod.
+        - Drain (Used to clean up the Node for maintance)
+        - Cordon 
