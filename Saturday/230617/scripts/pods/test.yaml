@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: default
+  name: kubernetes-bootcamp
+  labels:
+    app: kubernetes-bootcamp
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: kubernetes-bootcamp
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

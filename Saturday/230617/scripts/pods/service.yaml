@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: kubernetes-bootcamp
+  name: kubernetes-bootcamp
+  namespace: devops
+spec:
+  clusterIP: 10.106.159.240
+  clusterIPs:
+    - 10.106.159.240
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - nodePort: 30198
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: kubernetes-bootcamp
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
