@@ -3,6 +3,14 @@
 minikube start --nodes 2
 ```
 
+# Add 2 mores nodes to cluster
+```
+minikube node add
+
+# Total should show 4 nodes including control-plane
+minikube node list 
+```
+
 # Check the addons:
 ```
 minikube addons list
@@ -11,11 +19,6 @@ minikube addons list
 ```
 minikube addons enable volumesnapshots
 minikube addons enable csi-hostpath-driver
-```
-
-# Add node to cluster
-```
-minikube node add
 ```
 
 # Check the nodes
