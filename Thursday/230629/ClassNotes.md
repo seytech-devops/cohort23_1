@@ -23,5 +23,8 @@
     - [Set up Nginx Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
 6. [Storage in Kubernetes](https://kubernetes.io/docs/concepts/storage/)
     - [Communicate Between Containers in the Same Pod Using a Shared Volume](https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/)
+7. [RollingStrategy]()
+    - [Rolling Update on a DaemonSet](https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/)
+    - [Rollback on a DaemonSet](https://kubernetes.io/docs/tasks/manage-daemon/rollback-daemon-set/)
 
 - [Cloud Comparison **Bonus Link**](https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison)

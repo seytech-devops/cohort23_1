@@ -31,3 +31,4 @@ kubectl get nodes -owide
 ```
 minikube addons enable ingress
 ```
+

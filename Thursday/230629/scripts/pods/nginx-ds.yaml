@@ -17,4 +17,4 @@ spec:
         ssd: "true"
       containers:
         - name: example-container
-          image: example-image
+          image: nginx:1.16.1
