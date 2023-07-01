@@ -15,7 +15,9 @@
 3. [Run Applications on Kubernetes Cluster](https://kubernetes.io/docs/tasks/run-application/)
     - [Run Stateless Application via Deployment Workload](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/)
     - [Run a Single-Instance Stateful Application](https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
-4. [Access Application Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/)
+4. [Access Application in a Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/)
+    - [Access Services Running on the Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/#accessing-services-running-on-the-cluster)
+        - [Service Types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
     - [Use a Service to Access an Application in a Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/)
     - [Connect a Frontend to a Backend Using Services](https://kubernetes.io/docs/tasks/access-application-cluster/connecting-frontend-backend/)
     - [List All Container Images Running in a Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/)
@@ -24,6 +26,7 @@
 6. [Storage in Kubernetes](https://kubernetes.io/docs/concepts/storage/)
     - [Communicate Between Containers in the Same Pod Using a Shared Volume](https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/)
 7. [RollingStrategy]()
+    - [Update Strategies](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#update-strategies)
     - [Rolling Update on a DaemonSet](https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/)
     - [Rollback on a DaemonSet](https://kubernetes.io/docs/tasks/manage-daemon/rollback-daemon-set/)
 
