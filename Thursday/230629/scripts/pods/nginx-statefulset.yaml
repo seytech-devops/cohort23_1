@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  updateStrategy:
+    type: RollingUpdate
+  minReadySeconds: 10s
+
+  
