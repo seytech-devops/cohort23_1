@@ -321,3 +321,37 @@ This is Projects Folder contains number of different projects.
     - Switched the Data center, VMWare start getting failed (kubeadm setup cluster)
 - Azure Application gateway needed for app that needs internet access
 - everything else  is on kube cluster.
+
+
+
+# Posible HR questions:
+- Why are you looking for a new job?
+    - Contract 
+    - Looking for change becaue of
+    - I looked your company and also like the job descrioption. I like it a lot bacause of this something. 
+- If you wree hired when will you start?
+- What are you looking on your next role?
+- What do you know about our compnay?
+- Are you looking actively?
+- Do you have any other interview in pipeline?
+- How soon are you able to join?
+- Is  contract to hite works for you?
+- They ask about your tech skill
+- Try to make a great conversation
+- Have you had a conflict with your coworker or manager?
+- How do you priortize the task
+- How do you manage your time?
+    - I use my calender
+- Give some feedbak like
+    - thank you for sharing. this is awesome.
+    - make sense
+ - What platform do you to lear and keep up your skill, learn new tools.
+    - Join webinar
+    - Workshops
+    - Conference
+    - Read articales
+# Ask questions to interviewer
+- About the company
+- About the tech, tool.
+- About the interview process
+- About the team
