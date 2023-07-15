@@ -356,6 +356,9 @@ This is Projects Folder contains number of different projects.
     - DBA TEam
     - QA
     - Networking Team
+- This is a remote job, will that work?
+- This is a hybrid postion, will that work?
+
 # Ask questions to interviewer
 - About the company
 - About the tech, tool.
