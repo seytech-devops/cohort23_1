@@ -335,7 +335,7 @@ This is Projects Folder contains number of different projects.
 - Are you looking actively?
 - Do you have any other interview in pipeline?
 - How soon are you able to join?
-- Is  contract to hite works for you?
+- Is  contract to hire works for you?
 - They ask about your tech skill
 - Try to make a great conversation
 - Have you had a conflict with your coworker or manager?
@@ -350,6 +350,12 @@ This is Projects Folder contains number of different projects.
     - Workshops
     - Conference
     - Read articales
+- How many team meber in your team?
+- WHich team do you work with?
+    - Security Team
+    - DBA TEam
+    - QA
+    - Networking Team
 # Ask questions to interviewer
 - About the company
 - About the tech, tool.
