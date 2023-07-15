@@ -358,6 +358,7 @@ This is Projects Folder contains number of different projects.
     - Networking Team
 - This is a remote job, will that work?
 - This is a hybrid postion, will that work?
+- Can you walk me through how is your day to day look like?
 
 # Ask questions to interviewer
 - About the company
