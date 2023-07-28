@@ -81,3 +81,13 @@ How do you call function:
 - Python has both mutable and immutable collection data types. 
     - Strings and tuples are **immutable**,
     - lists, dictionaries, and sets are **mutable**.
+
+
+### Functions (Methods)
+- is a piece of program that does specific thing 
+
+```
+# How to define function in python 
+def <function_name>():
+    print("Welcome to python class")
+```
